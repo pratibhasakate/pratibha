@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+</head>
+  <body>
+    <script>
+    var num = 116540;
+    var n = num;
+    var freq =[];
+    var base =10;
+    
+    for(var i=0; i<base; i++){
+      freq[i] =0;
+      
+    }
+      
+      while(num !=0){
+        var lastDigit =num %10;
+        num =parseInt(num/10);
+        freq[lastDigit]++;
+        
+      }
+      document.write("frequency of each digit in "+n+"<br>");
+      for(var i = 0; i<base; i++){
+        document.write("frequency of"+i+" = "+freq[i]+"<br>");
+      }
+     </script> 
+  </body>
+</html>
